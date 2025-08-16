@@ -7,11 +7,11 @@ export default function HeroSection() {
     <Section spacing="none" background="default" className="min-h-screen flex items-center relative overflow-hidden">
       <AnimatedBackground />
       <Container size="xl" padding="md" className="relative z-10">
-        <div className="text-left max-w-2xl">
+        <div className="text-left max-w-3xl">
           <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-6xl">
             Sua empresa sempre no controle dos dados pessoais
           </h1>
-          <p className="mt-6 text-lg leading-8 text-muted-foreground max-w-3xl">
+          <p className="mt-6 text-lg leading-8 text-muted-foreground max-w-2xl">
             O melhor da tecnologia e consultoria jurídica especializada
             para simplificar a privacidade e a governança de dados.
           </p>

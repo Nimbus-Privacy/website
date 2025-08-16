@@ -35,20 +35,20 @@ export default function PartnersSection() {
   const duplicatedLogos = [...partnerLogos, ...partnerLogos]
 
   return (
-    <Section spacing="xl" background="card" className="bg-[#082040] overflow-hidden">
+    <Section spacing="xl" background="card" className="bg-[#4b37be] overflow-hidden">
       <Container size="xl" padding="md">
-        <div className="text-center mb-12">
-          <h2 className="text-secondary-600 text-sm font-bold tracking-[5.2px] uppercase mb-6">
+        <div className="text-center mb-8">
+          <h2 className="text-white text-sm font-bold tracking-[5.2px] uppercase mb-8">
             QUEM CONFIA EM NÓS
           </h2>
-          <h3 className="text-4xl sm:text-5xl font-bold text-foreground leading-tight max-w-3xl mx-auto">
-            Confiança que se constrói com <span className="text-secondary-600">tecnologia</span> e <span className="text-secondary-600">estratégia</span>
+          <h3 className="text-4xl sm:text-5xl font-bold text-white leading-tight max-w-3xl mx-auto">
+            Confiança que se constrói com <span className="text-white">tecnologia</span> e <span className="text-white">estratégia</span>
           </h3>
         </div>
       </Container>
 
       <div 
-        className="relative mt-8"
+        className="relative mt-10"
         onMouseEnter={() => setIsPaused(true)}
         onMouseLeave={() => setIsPaused(false)}
       >
@@ -64,13 +64,13 @@ export default function PartnersSection() {
                 key={`${logo}-${index}`}
                 className="flex-shrink-0 px-8"
               >
-                <div className="w-48 h-24 relative flex items-center justify-center">
+                <div className="relative w-[120px] h-[60px] sm:w-[140px] sm:h-[80px] flex items-center justify-center">
                   <Image
                     src={`/images/partners/${logo}`}
                     alt={logo.replace('.png', '')}
                     fill
                     className="object-contain filter brightness-0 invert opacity-70 hover:opacity-100 transition-opacity duration-300"
-                    sizes="(max-width: 768px) 150px, 192px"
+                    sizes="(max-width: 768px) 120px, 160px"
                   />
                 </div>
               </div>

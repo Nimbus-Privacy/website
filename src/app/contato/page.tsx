@@ -217,7 +217,7 @@ export default function ContatoPage() {
                   onChange={handleInputChange}
                   placeholder="João Silva"
                   required
-                  className="w-full px-4 py-3 rounded-lg border-2 border-secondary-600 bg-background text-foreground placeholder:text-neutral-600 focus:outline-none focus:border-primary-500 transition-colors"
+                  className="w-full px-4 py-3 rounded-lg border-2 border-secondary-600 bg-[#051428] text-white placeholder:text-neutral-400 focus:outline-none focus:border-primary-500 focus:bg-[#051428] transition-colors autofill:bg-[#051428] autofill:text-white"
                 />
               </div>
 
@@ -233,7 +233,7 @@ export default function ContatoPage() {
                   onChange={handleInputChange}
                   placeholder="seu@email.com.br"
                   required
-                  className={`w-full px-4 py-3 rounded-lg border-2 bg-background text-foreground placeholder:text-neutral-600 focus:outline-none focus:border-primary-500 transition-colors ${
+                  className={`w-full px-4 py-3 rounded-lg border-2 bg-[#051428] text-white placeholder:text-neutral-400 focus:outline-none focus:border-primary-500 focus:bg-[#051428] transition-colors autofill:bg-[#051428] autofill:text-white ${
                     errors.email ? 'border-red-500' : 'border-secondary-600'
                   }`}
                 />
@@ -254,7 +254,7 @@ export default function ContatoPage() {
                   onChange={handleInputChange}
                   placeholder="Sua empresa ABC"
                   required
-                  className="w-full px-4 py-3 rounded-lg border-2 border-secondary-600 bg-background text-foreground placeholder:text-neutral-600 focus:outline-none focus:border-primary-500 transition-colors"
+                  className="w-full px-4 py-3 rounded-lg border-2 border-secondary-600 bg-[#051428] text-white placeholder:text-neutral-400 focus:outline-none focus:border-primary-500 focus:bg-[#051428] transition-colors autofill:bg-[#051428] autofill:text-white"
                 />
               </div>
 
@@ -270,7 +270,7 @@ export default function ContatoPage() {
                   onChange={handleInputChange}
                   placeholder="(11) 99999-9999"
                   required
-                  className={`w-full px-4 py-3 rounded-lg border-2 bg-background text-foreground placeholder:text-neutral-600 focus:outline-none focus:border-primary-500 transition-colors ${
+                  className={`w-full px-4 py-3 rounded-lg border-2 bg-[#051428] text-white placeholder:text-neutral-400 focus:outline-none focus:border-primary-500 focus:bg-[#051428] transition-colors autofill:bg-[#051428] autofill:text-white ${
                     errors.contato ? 'border-red-500' : 'border-secondary-600'
                   }`}
                 />
@@ -350,7 +350,7 @@ export default function ContatoPage() {
                   onChange={handleInputChange}
                   placeholder="Se desejar, deixe uma mensagem ou observação"
                   rows={4}
-                  className="w-full px-4 py-3 rounded-lg border-2 border-secondary-600 bg-background text-foreground placeholder:text-neutral-600 focus:outline-none focus:border-primary-500 transition-colors resize-vertical"
+                  className="w-full px-4 py-3 rounded-lg border-2 border-secondary-600 bg-[#051428] text-white placeholder:text-neutral-400 focus:outline-none focus:border-primary-500 focus:bg-[#051428] transition-colors resize-vertical autofill:bg-[#051428] autofill:text-white"
                 />
               </div>
 
