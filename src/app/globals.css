@@ -1,0 +1,255 @@
+@import "tailwindcss";
+
+/* Funnel Sans Font Family */
+@font-face {
+  font-family: 'Funnel Sans';
+  src: url('/fonts/FunnelSans-VariableFont_wght.ttf') format('truetype-variations');
+  font-weight: 200 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Funnel Sans';
+  src: url('/fonts/FunnelSans-Italic-VariableFont_wght.ttf') format('truetype-variations');
+  font-weight: 200 800;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Fallback static fonts for better browser support */
+@font-face {
+  font-family: 'Funnel Sans Fallback';
+  src: url('/fonts/STATIC/FunnelSans-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Funnel Sans Fallback';
+  src: url('/fonts/STATIC/FunnelSans-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Funnel Sans Fallback';
+  src: url('/fonts/STATIC/FunnelSans-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Funnel Sans Fallback';
+  src: url('/fonts/STATIC/FunnelSans-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  /* Base colors - Dark theme only */
+  --background: #051428;
+  --foreground: #ffffff;
+  
+  /* Component colors */
+  --border: #251B5F;
+  --input: #082040;
+  --ring: #4b37be;
+  --muted: #082040;
+  --muted-foreground: #ffffff;
+  --card: #082040;
+  --card-foreground: #ffffff;
+  --popover: #082040;
+  --popover-foreground: #ffffff;
+  --accent: #1D154A;
+  --accent-foreground: #ffffff;
+  --destructive: #dc2626;
+  --destructive-foreground: #ffffff;
+  
+  /* Primary colors - Based on primary button color */
+  --primary-50: #e8e5ff;
+  --primary-100: #c9c2fe;
+  --primary-200: #a79bfd;
+  --primary-300: #8574fc;
+  --primary-400: #6b57fb;
+  --primary-500: #4b37be;
+  --primary-600: #3e2d9e;
+  --primary-700: #32247e;
+  --primary-800: #251a5e;
+  --primary-900: #19113e;
+  --primary-950: #0c071e;
+  
+  /* Secondary colors - Based on secondary button color */
+  --secondary-50: #e6fff5;
+  --secondary-100: #c0ffe7;
+  --secondary-200: #85ffd0;
+  --secondary-300: #4affba;
+  --secondary-400: #1affa5;
+  --secondary-500: #00c382;
+  --secondary-600: #00a36c;
+  --secondary-700: #008357;
+  --secondary-800: #006341;
+  --secondary-900: #00432c;
+  --secondary-950: #002316;
+  
+  /* Accent colors - Additional palette colors */
+  --accent-1: #05285A;
+  --accent-2: #1D154A;
+  --accent-3: #61A3F1;
+  --accent-4: #251B5F;
+  --accent-5: #5C33C8;
+  --accent-6: #3941BE;
+  
+  /* Text colors */
+  --text-primary: #f3faff;
+  --text-secondary: #00c382;
+  --text-body: #ffffff;
+  
+  /* Button colors */
+  --button-primary: #4b37be;
+  --button-secondary: #00c382;
+  
+  /* Neutral colors - Dark grays for the dark theme */
+  --neutral-50: #1a1a1a;
+  --neutral-100: #2a2a2a;
+  --neutral-200: #3a3a3a;
+  --neutral-300: #4a4a4a;
+  --neutral-400: #5a5a5a;
+  --neutral-500: #6a6a6a;
+  --neutral-600: #7a7a7a;
+  --neutral-700: #8a8a8a;
+  --neutral-800: #9a9a9a;
+  --neutral-900: #aaaaaa;
+  --neutral-950: #bababa;
+}
+
+@theme inline {
+  /* Base colors */
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  
+  /* Component colors */
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  
+  /* Primary colors */
+  --color-primary-50: var(--primary-50);
+  --color-primary-100: var(--primary-100);
+  --color-primary-200: var(--primary-200);
+  --color-primary-300: var(--primary-300);
+  --color-primary-400: var(--primary-400);
+  --color-primary-500: var(--primary-500);
+  --color-primary-600: var(--primary-600);
+  --color-primary-700: var(--primary-700);
+  --color-primary-800: var(--primary-800);
+  --color-primary-900: var(--primary-900);
+  --color-primary-950: var(--primary-950);
+  
+  /* Secondary colors */
+  --color-secondary-50: var(--secondary-50);
+  --color-secondary-100: var(--secondary-100);
+  --color-secondary-200: var(--secondary-200);
+  --color-secondary-300: var(--secondary-300);
+  --color-secondary-400: var(--secondary-400);
+  --color-secondary-500: var(--secondary-500);
+  --color-secondary-600: var(--secondary-600);
+  --color-secondary-700: var(--secondary-700);
+  --color-secondary-800: var(--secondary-800);
+  --color-secondary-900: var(--secondary-900);
+  --color-secondary-950: var(--secondary-950);
+  
+  /* Success colors */
+  --color-success-50: var(--success-50);
+  --color-success-100: var(--success-100);
+  --color-success-200: var(--success-200);
+  --color-success-300: var(--success-300);
+  --color-success-400: var(--success-400);
+  --color-success-500: var(--success-500);
+  --color-success-600: var(--success-600);
+  --color-success-700: var(--success-700);
+  --color-success-800: var(--success-800);
+  --color-success-900: var(--success-900);
+  --color-success-950: var(--success-950);
+  
+  /* Accent colors */
+  --color-accent-1: var(--accent-1);
+  --color-accent-2: var(--accent-2);
+  --color-accent-3: var(--accent-3);
+  --color-accent-4: var(--accent-4);
+  --color-accent-5: var(--accent-5);
+  --color-accent-6: var(--accent-6);
+  
+  /* Text colors */
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-text-body: var(--text-body);
+  
+  /* Button colors */
+  --color-button-primary: var(--button-primary);
+  --color-button-secondary: var(--button-secondary);
+  
+  /* Neutral colors */
+  --color-neutral-50: var(--neutral-50);
+  --color-neutral-100: var(--neutral-100);
+  --color-neutral-200: var(--neutral-200);
+  --color-neutral-300: var(--neutral-300);
+  --color-neutral-400: var(--neutral-400);
+  --color-neutral-500: var(--neutral-500);
+  --color-neutral-600: var(--neutral-600);
+  --color-neutral-700: var(--neutral-700);
+  --color-neutral-800: var(--neutral-800);
+  --color-neutral-900: var(--neutral-900);
+  --color-neutral-950: var(--neutral-950);
+  
+  /* Fonts */
+  --font-sans: "Funnel Sans", "Funnel Sans Fallback", "Geist Sans", system-ui, -apple-system, sans-serif;
+  --font-mono: "Geist Mono", "SF Mono", Consolas, monospace;
+}
+
+/* Only dark theme - no theme switching needed */
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+}
+
+/* Mobile-specific improvements */
+@media (max-width: 767px) {
+  /* Prevent horizontal scroll on mobile */
+  html, body {
+    overflow-x: hidden;
+  }
+  
+  /* Improve touch targets on mobile */
+  button, a, [role="button"] {
+    min-height: 44px;
+    min-width: 44px;
+  }
+}
+
+/* Safe area support for devices with notches */
+@supports (padding: max(0px)) {
+  .pb-safe {
+    padding-bottom: max(1rem, env(safe-area-inset-bottom));
+  }
+  
+  .pt-safe {
+    padding-top: max(1rem, env(safe-area-inset-top));
+  }
+}
