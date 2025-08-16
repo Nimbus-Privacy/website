@@ -15,6 +15,11 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <head>
+        <script
+          type="text/javascript"
+          src="//api.dadoslegais.com/api/sdk/js?id=61"
+          async
+        ></script>
       </head>
       <body className="antialiased">
         <Layout
