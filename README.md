@@ -129,6 +129,30 @@ O formulário de contato usa o [Resend](https://resend.com) para envio de emails
 3. Gere uma API Key
 4. Configure as variáveis de ambiente conforme descrito acima
 
+## 🚀 Deploy Automático com GitHub Actions
+
+O projeto está configurado com GitHub Actions para deploy automático na Vercel quando houver:
+- Push direto na branch `main`
+- Merge de Pull Request na branch `main`
+
+### Configuração do Deploy Automático
+
+1. **No GitHub**, vá em Settings → Secrets and variables → Actions e adicione:
+   - `VERCEL_TOKEN` - Token da Vercel (obtenha em [vercel.com/account/tokens](https://vercel.com/account/tokens))
+   - `VERCEL_ORG_ID` - ID da organização (encontre no dashboard da Vercel)
+   - `VERCEL_PROJECT_ID` - ID do projeto (encontre nas configurações do projeto na Vercel)
+   - `RESEND_API_KEY` - Chave API do Resend
+   - `EMAIL_FROM` - Email remetente
+   - `EMAIL_TO` - Email destinatário
+
+2. **Para obter os IDs da Vercel**:
+   ```bash
+   npx vercel link
+   # Isso criará um arquivo .vercel/project.json com orgId e projectId
+   ```
+
+3. **Workflow será acionado automaticamente** ao fazer push ou merge na main
+
 ## 🔗 Links Importantes
 
 - **Formulário Privacy Pass**: O botão "Realize agora" direciona para o Typeform configurado
