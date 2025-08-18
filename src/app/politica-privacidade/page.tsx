@@ -183,7 +183,7 @@ function PolicyCard({ item, isOpen, onToggle }: {
             )}
             {item.content && item.id === 11 && (
               <div className="mt-6 text-base text-muted-foreground leading-relaxed">
-                Se o Usuário desejar, poderá desativar os cookies. É comum que isso possa ser feito no menu "opções" ou "preferências" de seu browser. Note-se que ao desativar cookies, pode ser que haja prejuízos na performance da navegação do site.
+                Se o Usuário desejar, poderá desativar os cookies. É comum que isso possa ser feito no menu &quot;opções&quot; ou &quot;preferências&quot; de seu browser. Note-se que ao desativar cookies, pode ser que haja prejuízos na performance da navegação do site.
               </div>
             )}
           </div>

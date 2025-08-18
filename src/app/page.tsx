@@ -1,7 +1,7 @@
 'use client'
 
 import { useEffect } from 'react'
-import { HeroSection, ComplianceSection, PrivacyManagementSection, TechnologyConsultingSection, AboutUsSection, PartnersSection, WhyNimbusSection, FrequentSolutionsSection, CTASection } from '@/components/sections'
+import { HeroSection, ComplianceSection, PrivacyManagementSection, TechnologyConsultingSection, AboutUsSection, PartnersSection, WhyNimbusSection, CTASection } from '@/components/sections'
 
 export default function Home() {
 
