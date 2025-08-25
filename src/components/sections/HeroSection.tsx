@@ -1,8 +1,14 @@
+'use client'
+
 import Link from 'next/link'
 import { Button, AnimatedBackground } from '@/components/ui'
 import { Container, Section } from '@/components/layout'
 
 export default function HeroSection() {
+  const handleScrollToSolucoes = () => {
+    document.getElementById('solucoes')?.scrollIntoView({ behavior: 'smooth' })
+  }
+
   return (
     <Section spacing="none" background="default" className="min-h-screen flex items-center relative overflow-hidden">
       <AnimatedBackground />
@@ -20,7 +26,7 @@ export default function HeroSection() {
               variant="primary" 
               size="lg" 
               className="w-full sm:w-auto"
-              onClick={() => document.getElementById('solucoes')?.scrollIntoView({ behavior: 'smooth' })}
+              onClick={handleScrollToSolucoes}
             >
               Saiba mais
             </Button>

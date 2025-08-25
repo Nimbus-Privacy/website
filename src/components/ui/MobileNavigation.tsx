@@ -162,7 +162,8 @@ export default function MobileNavigation({ items, className }: MobileNavigationP
                 alt="Nimbus Privacy"
                 width={130}
                 height={30}
-                className="h-7 w-auto"
+                className="h-7"
+                style={{ width: 'auto' }}
                 priority
               />
             </Link>

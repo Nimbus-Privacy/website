@@ -12,10 +12,9 @@ interface FeatureCardProps {
   onHover: () => void
   onClick: () => void
   image: string
-  cardId: number
 }
 
-function FeatureCard({ title, isActive, onHover, onClick, image, cardId }: FeatureCardProps) {
+function FeatureCard({ title, isActive, onHover, onClick, image }: FeatureCardProps) {
   return (
     <div>
       <div
@@ -37,7 +36,7 @@ function FeatureCard({ title, isActive, onHover, onClick, image, cardId }: Featu
           <div className="relative w-full max-w-lg mx-auto aspect-[4/3]">
             <Image
               src={image}
-              alt={`Card ${cardId}`}
+              alt={title}
               width={600}
               height={450}
               className="w-full h-full object-contain transition-all duration-500 ease-in-out"
@@ -110,7 +109,7 @@ export default function PrivacyManagementSection() {
                 <Image
                   key={card.id}
                   src={card.image}
-                  alt={`Card ${card.id}`}
+                  alt={card.title}
                   width={600}
                   height={450}
                   className={`absolute inset-0 w-full h-full object-contain transition-all duration-500 ease-in-out ${
@@ -132,7 +131,6 @@ export default function PrivacyManagementSection() {
                 onHover={() => setActiveCard(card.id)}
                 onClick={() => setActiveCard(card.id)}
                 image={card.image}
-                cardId={card.id}
               />
             ))}
           </div>

@@ -71,6 +71,8 @@ export default function PartnersSection() {
                     fill
                     className="object-contain filter brightness-0 invert opacity-70 hover:opacity-100 transition-opacity duration-300"
                     sizes="(max-width: 768px) 120px, 160px"
+                    loading="lazy"
+                    quality={75}
                   />
                 </div>
               </div>
