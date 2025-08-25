@@ -29,7 +29,7 @@ export default function DoubtSection() {
               <div className="relative min-h-[250px] sm:min-h-[300px] lg:min-h-[400px] lg:hidden">
                 <Image
                   src="/images/sessions/ilustração3.png"
-                  alt="Fale com nossos especialistas"
+                  alt="Especialistas em LGPD e consultoria de privacidade prontos para atender"
                   fill
                   className="object-contain object-right-bottom pr-4 pb-4"
                 />

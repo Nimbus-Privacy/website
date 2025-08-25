@@ -78,7 +78,7 @@ export default function ComplianceSection() {
           >
             <Image
               src="/images/sessions/np-4.png"
-              alt="Privacy Pass"
+              alt="Privacy Pass - Sistema de gestão de privacidade e LGPD"
               width={600}
               height={400}
               className="w-full h-auto max-w-lg"

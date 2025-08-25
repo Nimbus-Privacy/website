@@ -63,7 +63,7 @@ export default function WhyNimbusSection() {
               <div className="relative">
                 <Image
                   src="/images/sessions/why-1.png"
-                  alt="Why Nimbus Privacy"
+                  alt="Profissionais especializados em LGPD e proteção de dados"
                   width={500}
                   height={350}
                   className="w-full h-auto max-w-md"
@@ -83,7 +83,7 @@ export default function WhyNimbusSection() {
               <div className="relative">
                 <Image
                   src="/images/sessions/why-2.png"
-                  alt="Strategic Partnership"
+                  alt="Parceria estratégica em consultoria de privacidade e compliance"
                   width={500}
                   height={350}
                   className="w-full h-auto max-w-md"
@@ -181,7 +181,7 @@ export default function WhyNimbusSection() {
             <div className="relative">
               <Image
                 src="/images/sessions/why-1.png"
-                alt="Why Nimbus Privacy"
+                alt="Profissionais especializados em LGPD e proteção de dados"
                 width={500}
                 height={350}
                 className="w-full h-auto max-w-sm"
@@ -235,7 +235,7 @@ export default function WhyNimbusSection() {
             <div className="relative">
               <Image
                 src="/images/sessions/why-2.png"
-                alt="Strategic Partnership"
+                alt="Parceria estratégica em consultoria de privacidade e compliance"
                 width={500}
                 height={350}
                 className="w-full h-auto max-w-sm"

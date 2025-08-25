@@ -34,7 +34,8 @@ const Footer = forwardRef<HTMLElement, FooterProps>(
                   alt="Nimbus Privacy"
                   width={120}
                   height={29}
-                  className="h-7 w-auto"
+                  className="h-7"
+                  style={{ width: 'auto' }}
                 />
               </Link>
 
@@ -191,7 +192,7 @@ const Footer = forwardRef<HTMLElement, FooterProps>(
                 </h4>
                 <Image
                   src="/images/logos/badge.png"
-                  alt="Certificação"
+                  alt="Certificação de conformidade LGPD e proteção de dados"
                   width={64}
                   height={64}
                   className="w-16 h-16"
@@ -275,7 +276,7 @@ const Footer = forwardRef<HTMLElement, FooterProps>(
               <div>
                 <Image
                   src="/images/logos/badge.png"
-                  alt="Certificação"
+                  alt="Certificação de conformidade LGPD e proteção de dados"
                   width={80}
                   height={80}
                   className="w-20 h-20"

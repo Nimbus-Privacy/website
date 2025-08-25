@@ -43,7 +43,8 @@ const Header = forwardRef<HTMLElement, HeaderProps>(
                   alt="Nimbus Privacy"
                   width={140}
                   height={32}
-                  className="h-8 w-auto"
+                  className="h-8"
+                  style={{ width: 'auto' }}
                   priority
                 />
               </Link>
