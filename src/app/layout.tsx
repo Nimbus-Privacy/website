@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Layout, Header, Footer } from '@/components/layout'
+import { WhatsAppFloat } from '@/components/ui'
 
 export const metadata: Metadata = {
   title: "Nimbus Privacy",
@@ -28,6 +29,7 @@ export default function RootLayout({
         >
           {children}
         </Layout>
+        <WhatsAppFloat />
       </body>
     </html>
   );
